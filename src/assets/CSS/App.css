@@ -1,0 +1,342 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.container {
+  position: relative;
+  height: 100vh;
+}
+
+.centered-element {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* container */
+.right-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* columns */
+.right-sidebar > * {
+  width: 100%;
+  padding: 1rem;
+}
+
+/* tablet breakpoint */
+@media (min-width: 768px) {
+  .right-sidebar > *:nth-child(1) {
+    width: calc(100% / 3 * 2);
+  }
+  .right-sidebar > *:nth-child(2) {
+    width: calc(100% / 3);
+  }
+}
+.heading {
+  color: #f25046;
+}
+
+
+/* Float four columns side by side */
+.news_card {
+  float: left;
+  width: 25%;
+  margin: 1rem 0 auto;
+  padding-left: 24px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .news_card {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.boxew {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+.lastest_news {
+  /* background-color: #f25046; */
+  height: 3rem;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.lastest_news .lastest {
+  font-size: 18px;
+  width: 6.5rem;
+  height: 50px;
+  border-left: 0px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 50px solid #f25046;
+}
+.maruqeeText {
+  font-size: 30px;
+  color: #f25046;
+}
+.headline {
+  width: 100%;
+  height: 50px;
+}
+.card_title {
+  text-decoration: none;
+  color: #3e3e3e;
+  text-align: left;
+  font-size: 20px;
+}
+.card_title:hover {
+  color: #f25046;
+  cursor: pointer;
+}
+
+.news_item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 40%;
+  margin-bottom: 1rem;
+}
+
+.news_item:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.news_box {
+  padding: 2px 16px;
+}
+.news_desc {
+  text-align: left;
+}
+
+/* Navbar CSS */
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans|Mountains+of+Christmas&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.wrapper .multi_color_border {
+  width: 100%;
+  height: 5px;
+  /* background: linear-gradient(to right, #37a000 0% , #37a000 25%, #494949 25%, #494949 50%, #37a000 50%, #37a000 75%, #494949 75%, #494949 100%); */
+  background-color: #f25046;
+}
+
+.wrapper .top_nav {
+  margin-top: 5px;
+  width: 100%;
+  height: 65px;
+  background: #fff;
+  padding: 0 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .top_nav .left {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .top_nav .left .logo p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #494949;
+  font-family: "Rethink Sans", cursive;
+  margin-right: 25px;
+}
+
+.wrapper .top_nav .left .logo p span {
+  /* color: #37a000; */
+  color: #f25046;
+  font-family: "Rethink Sans", cursive;
+}
+
+.wrapper .top_nav .left .search_bar input[type="text"] {
+  border: 1px solid #666666;
+  padding: 5px 10px;
+  outline: none;
+  transition: all 0.5s linear;
+}
+
+.wrapper .top_nav .left .search_bar input[type="text"]:focus {
+  width: 250px;
+}
+
+.wrapper .top_nav .right ul {
+  display: flex;
+}
+
+.wrapper .top_nav .right ul li {
+  margin: 0 12px;
+}
+
+.wrapper .top_nav .right ul li:last-child {
+  /* background:  #37a000; */
+  background-color: #f25046;
+  margin-right: 0;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.wrapper .top_nav .right ul li:hover:last-child {
+  background: #494949;
+}
+
+.wrapper .top_nav .right ul li a {
+  display: block;
+  padding: 8px 10px;
+  color: #666666;
+  text-decoration: none;
+}
+
+.wrapper .top_nav .right ul li:last-child a {
+  color: #fff;
+}
+
+.wrapper .bottom_nav {
+  width: 100%;
+  background: #f9f9f9;
+  height: 45px;
+  padding: 0 50px;
+}
+
+.wrapper .bottom_nav ul {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .bottom_nav ul li a {
+  color: #494949;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.wrapper .banner img {
+  width: 100%;
+  height: 400px;
+}
+
+.lastest:after {
+  display: block;
+  position: absolute;
+  top: 108px;
+  left: 17px;
+  width: 60px;
+  height: 60px;
+  content: "Lastest";
+  border-top: solid 30px transparent;
+  border-bottom: solid 30px transparent;
+  color: #282c34;
+}
+.bootm_sadow:after {
+  display: block;
+  position: absolute;
+  top: 108px;
+  left: 17px;
+  width: 60px;
+  height: 60px;
+  content: url("http://localhost:3000/assets/IMAGE/bottom_sadow.png");
+  border-top: solid 30px transparent;
+  border-bottom: solid 30px transparent;
+  color: #282c34;
+}
+.button {
+  background-color: #f25046;
+  align-self: start;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.footer p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #494949;
+  font-family: "Rethink Sans", cursive;
+  margin-right: 25px;
+}
+.footer p span {
+  color: #f25046;
+  font-family: "Rethink Sans", cursive;
+}
